@@ -1,0 +1,16 @@
+### ========================================
+### 用户模块 - POST 接口测试
+### ========================================
+
+### 1. 注册新用户 - 正常情况
+POST http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+    "username": "testuser001",
+    "password": "Abc123456",
+    "email": "test@example.com"
+}
+### 1.添加用户
+POST http://localhost:8000/user/add
+Content-Type: application/json
